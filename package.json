@@ -1,8 +1,8 @@
 {
   "name": "vue-fade-images",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "simple image slider for crossfading a sequence of images",
-  "licence": "MIT",
+  "license": "MIT",
   "main": "dist/vue-fade-images.umd.js",
   "module": "dist/vue-fade-images.esm.js",
   "unpkg": "dist/vue-fade-images.min.js",
