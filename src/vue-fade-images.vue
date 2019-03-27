@@ -1,14 +1,14 @@
 <template>
   <div id="slider_wrap">
     <transition name="crossfade">
-        <img :key="current_img" :width="x" :height="y"  :src="getImgPath(current_img)" >
+        <img :key="current_img" :width="x" :height="y"  :src="current_src" >
     </transition>
   </div>
 </template>
 
 <script>
 export default {
-  name: "VueFadeImages",
+  name: "FadeImages",
   props: {
     images: Array,
     width: {
@@ -26,7 +26,7 @@ export default {
   },
   data () {
     return {
-      current_img: this.images[0],
+      current_src: this.images[0].src,
       time: this.delay,
       x: this.width,
       y: this.height,
@@ -37,12 +37,9 @@ export default {
     this.$options.interval = setInterval(this.changePicture, this.time);
   },
   methods: {
-    getImgPath (imgName) {
-        return imgName ? require(`../assets/${imgName}`) : ''
-    },
     changePicture () {
         this.img_idx++;
-        this.current_img = this.images[this.img_idx % this.images.length];
+        this.current_src = this.images[this.img_idx % this.images.length].src;
     }
   },
   beforeDestroy () {
