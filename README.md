@@ -2,6 +2,23 @@
 
 Lightweight, easy to configure component for displaying a sequence of alternating image files.
 
+## Install
+
+Install using npm
+```
+npm install vue-fade-images
+```
+
+
+ES6/commonjs import
+```
+// ES6
+import {FadeImages} from 'vue-fade-images';
+
+// commonjs
+var Swipe = require("vue-fade-images").fadeImages;
+```
+
 ## Usage
 
 After installation the module can be used as follows:
@@ -32,6 +49,15 @@ export default {
 }
 </script>
 ```
+## Options
+
+| Option  | Description |
+| ------------- | ------------- |
+| delay  | Number (default: 1000)  |
+| width  | Number (default: 200)  |
+| height | Number (default: 200)  |
+| array | Number (default: 200)  |
+
 
 ## Built With
 
