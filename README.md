@@ -53,10 +53,10 @@ export default {
 
 | Option  | Description |
 | ------------- | ------------- |
-| delay  | Number (default: 1000)  |
-| width  | Number (default: 200)  |
-| height | Number (default: 200)  |
-| array | Number (default: 200)  |
+| delay  | Number (default: 1000) in milliseconds |
+| width  | Number (default: 200) in px |
+| height | Number (default: 200) in px |
+| images | Array , array of image sources |
 
 
 ## Built With
